@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>WhatsApp Web</title>
+
+  <style type="text/css">
+    .nav-link:hover
+    {
+      background-color: #29A3E8;
+      color: white;
+    }
+
+    .chatPage
+    {
+      background-color: #E1F8F7;
+    }
+
+    .jumbotron.vertical-center
+    {
+      margin-bottom: 0;
+    }
+
+    .img-responsive
+    {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 572px)
+    {
+      .imgToHide
+      { 
+        display: none;
+      }
+    }
+  </style>
+
+	  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+</head>
+
+
+
+<body>
+	
+<div class="container-fluid">
+	<div class="d-flex justify-content-end bg-primary">
+  	<div class="mr-auto p-3 WhatsApp"><h4><span><img src="images/logo.png" alt="notfound" class="rounded-circle imgToHide"> WhatsApp</span></h4>
+  </div>
+
+  <div class="dropdown p-2">
+    
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="images/profilePic.jpg" alt="notfound" class="rounded-circle imgToHide">  Biswajeet Nayak
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">View Profile</a>
+      <a class="dropdown-item" href="#">Account Settings</a>
+      <a class="dropdown-item" href="#">Privacy Settings</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid tab-content">
+<nav class="navbar navbar-expand-lg bg-light">
+  
+  <button class="navbar-toggler justify-content-end navbar-light navbar-toggler-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse nav-tabs nav-justified navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav nav nav-tabs col-lg-12">
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" href="#home" id="home-tab">Home</a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" href="#chats" id="chat-tab">Chat Page</a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" href="#unreadMsgs" id="unread-tab">Unread Messages  <span class="badge badge-dark">18</span></a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" href="#profile" id="profile-tab">Profile</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+</div>
+
+<div class="container-fluid tab-content">
+
+<!-- Home Page Tab -->
+  <div id="home" class="container-fluid tab-pane fade in active" aria-labelledby="home-tab">
+    <div class="row">
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6>Avinash</h6> <h5 class="float-right text-muted"><small>01:00 PM</small></h5>
+        <p class="text-truncate font-weight-light">Hi, How are u?</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6>Sachin</h6> <h5 class="float-right text-muted"><small>10:30 AM</small></h5>
+        <p class="text-truncate font-weight-light">Wer r u bro?</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/group.png"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6>The Musketeers</h6> <h5 class="float-right text-muted"><small>YESTERDAY</small></h5>
+        <p class="text-truncate font-weight-light">Sanjay : c u all in inorbit</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6>Sameer</h6> <h5 class="float-right text-muted"><small>YESTERDAY</small></h5>
+        <p class="text-truncate font-weight-light">Need help bro</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6>Vikram</h6> <h5 class="float-right text-muted"><small>2 Days Ago</small></h5>
+        <p class="text-truncate font-weight-light">Chal bhai, milte h!</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6>Sanjay</h6> <h5 class="float-right text-muted"><small>06/20/2018</small></h5>
+        <p class="text-truncate font-weight-light">Wassup man</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Unread Message Tab -->
+  <div id="unreadMsgs" class="container-fluid tab-content tab-pane fade" aria-labelledby="unread-tab">
+    <div class="row">
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+        <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+          <h6><span class="badge badge-dark float-right m-1">5</span></h6> 
+          <h6>Stephy</h6><h5 class="float-right text-muted"><small>01:00 PM</small></h5>
+          <p class="text-truncate font-weight-light">Hey, wer r u??</p>
+        </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6><span class="badge badge-dark float-right m-1">2</span></h6> 
+        <h6>Srikar</h6> <h5 class="float-right text-muted"><small>10:30 AM</small></h5>
+        <p class="text-truncate font-weight-light">c u soon</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/group.png"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6><span class="badge badge-dark float-right m-1">10</span></h6> 
+        <h6>The 5</h6> <h5 class="float-right text-muted"><small>YESTERDAY</small></h5>
+        <p class="text-truncate font-weight-light">Sachin : but dats tru</p>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-5 col-3 d-flex justify-content-center align-items-center"><img src="images/user.jpg"></div>
+      <div class="col-lg-11 col-md-9 col-sm-4 col-9 border-bottom"><br>
+        <h6><span class="badge badge-dark float-right m-1">1</span></h6> 
+        <h6>Ritesh</h6> <h5 class="float-right text-muted"><small>YESTERDAY</small></h5>
+        <p class="text-truncate font-weight-light">c u soon</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- Chat Page -->
+  <div class="container-fluid tab-content tab-pane fade chatPage" id="chats" aria-labelledby="chat-tab">
+    <div class="row txt-one txt-two pt-1" style="background-color: #4A9491">
+      <div class="col-lg-5 col-md-7 col-sm-5 col-6">
+        <div class="row py-1">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-5 d-flex justify-content-center">
+            <img src="images/user.jpg" width="50" height="50" alt="">
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-8 col-7">
+            <h5>Avinash</h5>
+            <h7><p style="color: #41EC0E">typing....</p></h7>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-3 col-sm-3 col-2 d-flex justify-content-end ml-auto">
+        <div class="dropdown show">
+
+          <button type="button" class="btn txt-two py-4" data-toggle="dropdown" style="background-color: #4A9491">
+            <i class="fa fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#"><p>View Contact</p></a>
+            <a class="dropdown-item" href="#"><p>Clear Messages</p></a>
+            <a class="dropdown-item" href="#"><p>Block</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 bg-info rounded">Hi</div>
+      </div><br>
+
+
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2 m-2 bg-primary rounded">Hi</div>
+      </div><br>
+
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 bg-info rounded">How are you ?</div>
+      </div><br>
+
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2 m-2 bg-primary rounded">I m good. How abt u?</div>
+      </div><br>
+
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2 m-2 bg-primary rounded">howz ur trip?</div>
+      </div><br>
+
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 bg-info rounded">It was good </div>
+      </div><br>
+  </div>
+
+  <!-- Profile Page -->
+  <div class="jumbotron jumbotron-fluid tab-content tab-pane fade chatPage" id="profile" aria-labelledby="profile-tab" style="background-color: #96D9EA">
+          <div class="row justify-content-center">
+              <img src="images/profilePic2.jpg" class="img-responsive ml-auto mr-auto" alt="not found" width="180" height="150">
+          </div><br>
+
+          <div class="row">
+          <div class="border border-primary rounded text-center profileData" style="background-color: #3785E9; margin: 0 auto">
+            <button type="button" class="btn btn-success">Change Profile Photo</button>
+          </div>
+          </div><br>
+
+          <div class="border border-primary rounded ml-5 mr-5 profileData" style="background-color: #3785E9">
+            <strong>Biswajeet Nayak</strong>
+            <i class="float-right fa fa-pencil mr-2 mt-1" data-toggle="tooltip" title="Edit Name"></i>
+          </div><br>
+
+          <div class="border border-primary rounded ml-5 mr-5 profileData" style="background-color: #3785E9">
+            <strong>WhatsApp Status</strong>
+            <i class="float-right fa fa-pencil mr-2 mt-1" data-toggle="tooltip" title="Edit Status"></i>
+          </div><br>
+
+          <div class="border border-primary rounded ml-5 mr-5 profileData" style="background-color: #3785E9">
+            <strong>+91-999-111-0000</strong>
+            <i class="float-right fa fa-pencil mr-2 mt-1" data-toggle="tooltip" title="Edit Contact Number"></i>
+          </div><br>
+  </div>
+</div>
+</div>
+
+
+
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+</body>
+</html>
